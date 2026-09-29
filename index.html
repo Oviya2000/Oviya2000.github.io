@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1426">
+  <meta name="description" content="Oviya Elangovan is a Virginia Tech computer engineering graduate student working in computer vision, machine learning, and applied AI.">
+  <title>Oviya Elangovan | Computer Vision & Machine Learning</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root{color-scheme:dark;--navy:#0a1426;--navy2:#111e34;--panel:#15243d;--line:#31425d;--text:#f5f8ff;--muted:#b6c4d9;--blue:#8fbaff;--aqua:#9de7e3;--ink:#14243d;--paper:#f5f8fc;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.58}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--aqua);outline-offset:4px}button{font:inherit}::selection{background:var(--blue);color:var(--navy)}
+    .wrap{width:min(calc(100% - 48px),var(--max));margin-inline:auto}.skip{position:absolute;left:16px;top:-60px;background:var(--aqua);color:var(--navy);padding:9px 14px;z-index:20}.skip:focus{top:10px}
+    .site-header{position:relative;z-index:10;border-bottom:1px solid rgba(255,255,255,.13)}.header-inner{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:-.035em;font-size:1.18rem;white-space:nowrap}.brand span{color:var(--aqua)}.nav{display:flex;align-items:center;gap:30px}.nav a{font-size:.9rem;color:var(--muted);font-weight:600;transition:color .2s}.nav a:hover{color:#fff}.nav .nav-contact{border:1px solid #7894be;border-radius:999px;padding:8px 17px;color:#fff}.menu-button{display:none;background:none;border:1px solid var(--line);border-radius:8px;color:#fff;padding:8px 12px}
+    .hero{padding:104px 0 112px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 84% 38%,rgba(65,120,199,.16),transparent 37%);pointer-events:none}.hero-inner{position:relative;display:grid;grid-template-columns:1.16fr .84fr;gap:66px;align-items:center}.eyebrow,.section-label{font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--aqua)}.hero h1{font-size:clamp(3.2rem,6.4vw,6.3rem);line-height:1.04;letter-spacing:-.065em;margin:20px 0 24px;max-width:780px}.hero h1 span{color:var(--blue)}.hero .lead{font-size:clamp(1.1rem,1.7vw,1.35rem);color:#d0dced;max-width:620px;line-height:1.65;margin:0}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:38px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:10px 20px;border-radius:8px;font-weight:750;font-size:.94rem;transition:transform .18s,background .18s}.button:hover{transform:translateY(-2px)}.button-primary{color:var(--navy);background:var(--aqua)}.button-primary:hover{background:#c2f5f1}.button-secondary{color:#fff;border:1px solid #6d85a7}.button-secondary:hover{background:#1c3150}
+    .portrait{margin:0;max-width:430px;justify-self:end;width:100%;border:1px solid #53779c;border-radius:20px;overflow:hidden;background:#18243b;box-shadow:0 25px 75px rgba(0,0,0,.28)}.portrait img{display:block;width:100%;height:520px;object-fit:cover;object-position:center 37%}.portrait figcaption{padding:12px 18px;color:#c6d6ea;font-size:.84rem;font-weight:700;letter-spacing:.03em}
+    .light{background:var(--paper);color:var(--ink)}.section{padding:96px 0}.section-heading{max-width:720px;margin-bottom:42px}.section-heading h2{font-size:clamp(2.1rem,4vw,3.55rem);line-height:1.12;letter-spacing:-.055em;margin:12px 0 16px}.section-heading p{font-size:1.08rem;color:#50627a;margin:0}.light .section-label{color:#286785}.research-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.project-card{background:white;border:1px solid #d9e2ef;border-radius:16px;padding:30px;display:flex;flex-direction:column;min-height:310px;box-shadow:0 8px 28px rgba(22,47,81,.045)}.project-card.featured{background:#e9f2ff;border-color:#c7d9f4}.project-card h3{font-size:1.52rem;letter-spacing:-.035em;line-height:1.2;margin:16px 0 11px}.project-card p{color:#4c5f76;margin:0 0 25px}.card-number{font-size:.78rem;font-weight:850;color:#477398;letter-spacing:.14em;text-transform:uppercase}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}.tags span{border:1px solid #bfd0e3;border-radius:999px;padding:5px 10px;font-size:.76rem;font-weight:700;color:#31516f;background:rgba(255,255,255,.58)}.research-note{margin-top:20px;color:#52657b;font-size:.9rem}
+    .experience{background:#eaf0f8}.timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.entry{border-top:3px solid #2e608a;background:#fff;padding:28px;border-radius:0 0 14px 14px}.entry .date{color:#426785;font-weight:800;font-size:.83rem;letter-spacing:.08em;text-transform:uppercase}.entry h3{margin:11px 0 3px;font-size:1.32rem;letter-spacing:-.025em}.entry .org{color:#52708b;font-weight:700;margin:0 0 14px}.entry p:last-child{margin-bottom:0;color:#4c5f76}
+    .skills{padding:88px 0}.skills-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.skills .section-heading{margin-bottom:0}.skills .section-heading p{color:#aebfd4}.skill-group{border-top:1px solid #3a4e69;padding:20px 0;display:grid;grid-template-columns:180px 1fr;gap:25px}.skill-group:last-child{border-bottom:1px solid #3a4e69}.skill-group strong{color:var(--aqua)}.skill-group p{margin:0;color:#cad6e5}
+    .education-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu{border:1px solid #d6e0ec;border-radius:14px;background:#fff;padding:28px}.edu .school{font-size:.79rem;color:#356b8c;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.edu h3{font-size:1.4rem;line-height:1.25;margin:11px 0 9px;letter-spacing:-.03em}.edu p{color:#52647a;margin:0}.publication{margin-top:18px;background:#dfeafa;border-left:4px solid #377ba7;padding:25px 28px;border-radius:0 12px 12px 0}.publication span{display:block;color:#356b8c;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.publication p{font-size:1.13rem;line-height:1.4;margin:8px 0 0;font-weight:700}
+    .contact{padding:78px 0;border-top:1px solid #334760}.contact-inner{display:flex;align-items:end;justify-content:space-between;gap:30px}.contact h2{font-size:clamp(2rem,4vw,3.45rem);letter-spacing:-.055em;line-height:1.1;margin:12px 0}.contact p{color:#b9c8da;margin:0;max-width:600px}.contact-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:25px}.contact-links a{color:var(--aqua);font-weight:750;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}.contact-links a:hover{color:#fff}.contact .availability{border:1px solid #6685a9;border-radius:999px;padding:10px 16px;color:#deecf9;font-weight:700;white-space:nowrap}.footer{border-top:1px solid #293b55;color:#9faec2;font-size:.85rem;padding:24px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px}.project-link{display:inline-block;color:#176085;font-weight:800;margin:0 0 18px;text-decoration:underline;text-underline-offset:4px}.project-link:hover{color:#0b3452}
+    @media(max-width:850px){.hero-inner,.research-grid,.skills-layout{grid-template-columns:1fr}.hero{padding:75px 0}.portrait{justify-self:start;max-width:470px}.skills-layout{gap:28px}.nav{gap:15px}}@media(max-width:650px){.wrap{width:min(calc(100% - 36px),var(--max))}.header-inner{min-height:68px}.menu-button{display:block}.nav{display:none;position:absolute;top:68px;left:0;right:0;background:#10203a;border-bottom:1px solid var(--line);padding:20px 18px;flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:10px 4px}.nav .nav-contact{margin-top:8px;text-align:center}.hero{padding:66px 0 74px}.hero h1{font-size:clamp(2.9rem,12vw,4.6rem)}.portrait img{height:440px}.section{padding:70px 0}.timeline,.education-grid{grid-template-columns:1fr}.project-card{min-height:0;padding:25px}.skill-group{grid-template-columns:1fr;gap:5px}.contact-inner{align-items:start;flex-direction:column}.footer-inner{flex-direction:column;gap:4px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Oviya Elangovan, top of page">oviya<span>.</span>elangovan</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a href="#research">Research</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="Oviya_Elangovan_Resume.pdf" target="_blank" rel="noopener">Résumé</a><a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div>
+          <div class="eyebrow">Computer vision · Machine learning · Applied AI</div>
+          <h1 id="hero-title">Hi, I’m <span>Oviya Elangovan.</span></h1>
+          <p class="lead">I’m a computer engineering master’s student at Virginia Tech. I build practical machine learning systems, with current research in computer vision for precision livestock farming.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my projects</a><a class="button button-secondary" href="Oviya_Elangovan_Resume.pdf" download>Download résumé</a><a class="button button-secondary" href="https://github.com/Oviya2000" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+        </div>
+        <figure class="portrait"><img src="oviya-photo.jpg" alt="Oviya Elangovan standing in a flower-lined walkway" width="900" height="1600"><figcaption>Oviya Elangovan · Blacksburg, Virginia</figcaption></figure>
+      </div>
+    </section>
+    <section class="section light" id="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <div class="section-heading"><div class="section-label">Research</div><h2 id="research-title">Computer vision for real-world decisions</h2><p>My current work connects detection, segmentation, and predictive modeling to support livestock monitoring.</p></div>
+        <div class="research-grid">
+          <article class="project-card featured"><span class="card-number">01 / Current research</span><h3>Automated pig body condition scoring</h3><p>Developing an image-based workflow for pig body condition estimation. I work with animal-aware data splits, preprocessing, ResNet-18 models, and evaluation across RGB, depth-informed, and HHA inputs. I have also explored weighted loss and sampling for imbalanced scores.</p><div class="tags"><span>PyTorch</span><span>ResNet-18</span><span>Regression</span><span>Model evaluation</span></div></article>
+          <article class="project-card"><span class="card-number">02 / Vision pipeline</span><h3>Detection and segmentation</h3><p>Using YOLO to find pigs in camera frames and SAM2 to generate masks from cropped images, with attention to image quality and the downstream scoring task.</p><div class="tags"><span>YOLO</span><span>SAM2</span><span>OpenCV</span></div></article>
+        </div>
+        <p class="research-note">Virginia Tech research in precision livestock farming. Results and project materials can be added when cleared for public sharing.</p>
+      </div>
+    </section>
+    <section class="section light" id="projects" aria-labelledby="projects-title" style="padding-top:0">
+      <div class="wrap"><div class="section-heading"><div class="section-label">Selected projects</div><h2 id="projects-title">Built to solve practical problems</h2><p>Independent GitHub work and projects from my résumé, spanning machine learning, NLP, cloud services, and analytics.</p></div>
+      <div class="research-grid">
+        <article class="project-card featured"><span class="card-number">GitHub · Machine learning</span><h3>FraudShield</h3><p>An explainable fraud-risk platform with a leakage-aware chronological split, cost-sensitive decision threshold, FastAPI predictions, and a Streamlit dashboard. The repository reports a Random Forest test PR-AUC of 0.8174.</p><a class="project-link" href="https://github.com/Oviya2000/fraud-risk-ml-platform" target="_blank" rel="noopener noreferrer">View project on GitHub</a><div class="tags"><span>Python</span><span>Random Forest</span><span>FastAPI</span><span>Streamlit</span></div></article>
+        <article class="project-card"><span class="card-number">GitHub · NLP and retrieval</span><h3>ResolveAI</h3><p>A customer support copilot that classifies tickets, retrieves knowledge and similar cases, drafts answers grounded in cited context, and escalates uncertain requests. Its sample data is synthetic.</p><a class="project-link" href="https://github.com/Oviya2000/resolveai-support-copilot" target="_blank" rel="noopener noreferrer">View project on GitHub</a><div class="tags"><span>Python</span><span>RAG</span><span>FastAPI</span></div></article>
+        <article class="project-card"><span class="card-number">Résumé · NLP</span><h3>Support-ticket classification and routing</h3><p>Prepared ticket text and labels, trained a support-queue classifier, exposed confidence-scored predictions through FastAPI, and routed uncertain cases for manual review.</p><div class="tags"><span>Python</span><span>NLP</span><span>FastAPI</span></div></article>
+        <article class="project-card"><span class="card-number">Résumé · Analytics</span><h3>Sales and revenue dashboard</h3><p>Modeled sales, customer, product, region, and target data. Built Power Query transformations and DAX KPIs with filters and drill-down views.</p><div class="tags"><span>SQL</span><span>Power BI</span><span>DAX</span></div></article>
+        <article class="project-card"><span class="card-number">Résumé · Cloud</span><h3>Customer review sentiment monitor</h3><p>Built a serverless workflow to process reviews, store sentiment predictions, and monitor execution health using AWS services.</p><div class="tags"><span>AWS Lambda</span><span>S3</span><span>DynamoDB</span><span>Python</span></div></article>
+      </div></div>
+    </section>
+    <section class="section experience light" id="experience" aria-labelledby="experience-title">
+      <div class="wrap"><div class="section-heading"><div class="section-label">Experience</div><h2 id="experience-title">Research and industry practice</h2></div>
+        <div class="timeline">
+          <article class="entry"><div class="date">2026 – Present</div><h3>Graduate Research Assistant</h3><p class="org">Virginia Tech · Precision livestock research</p><p>Working on image processing and machine learning experiments for pig body condition estimation, including preprocessing, model training, and comparative evaluation.</p></article>
+          <article class="entry"><div class="date">2024 – 2025</div><h3>Data Science Intern</h3><p class="org">Wright Brothers Analytics · Chennai</p><p>Worked on machine learning and analytics projects across churn prediction, forecasting, recommendation, and reporting with Python, SQL, and Power BI.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="skills" aria-labelledby="skills-title"><div class="wrap skills-layout"><div class="section-heading"><div class="section-label">Toolkit</div><h2 id="skills-title">Methods and tools</h2><p>My work combines model development, thoughtful evaluation, and clear communication of results.</p></div><div>
+      <div class="skill-group"><strong>Languages & data</strong><p>Python, SQL, Pandas, NumPy</p></div>
+      <div class="skill-group"><strong>Machine learning</strong><p>scikit-learn, PyTorch, ResNet-18, model validation, regression and classification</p></div>
+      <div class="skill-group"><strong>Computer vision</strong><p>OpenCV, YOLO, SAM2, image preprocessing and segmentation</p></div>
+      <div class="skill-group"><strong>Visualization</strong><p>Power BI, data analysis and reporting</p></div>
+    </div></div></section>
+    <section class="section light" id="education" aria-labelledby="education-title"><div class="wrap"><div class="section-heading"><div class="section-label">Education & publication</div><h2 id="education-title">A foundation in engineering</h2></div>
+      <div class="education-grid"><article class="edu"><div class="school">Virginia Tech · Blacksburg, VA</div><h3>M.S. in Computer Engineering</h3><p>2026 – 2028 (expected)</p></article><article class="edu"><div class="school">Sri Sairam Engineering College · Chennai</div><h3>B.E. in Electronics and Communication Engineering</h3><p>2018 – 2022</p></article></div>
+      <div class="publication"><span>IEEE publication</span><p>“Parametric Analysis of a Small Button-Shaped Antenna Camouflaged with Fabrics for Body Wearable Applications”</p></div>
+    </div></section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><div class="section-label">Contact</div><h2 id="contact-title">Let’s connect.</h2><p>I’m interested in computer vision, machine learning, and applied AI opportunities.</p><div class="contact-links"><a href="mailto:oviya07@vt.edu">oviya07@vt.edu</a><a href="tel:+15405585150">+1 (540) 558-5150</a><a href="https://linkedin.com/in/oviya-e-539104382" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/Oviya2000" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><span class="availability">Blacksburg, Virginia</span></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> Oviya Elangovan</span><span>Computer vision · Machine learning · Applied AI</span></div></footer>
+  <script>
+    const button=document.querySelector('.menu-button'); const nav=document.querySelector('.nav');
+    button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open)});
+    nav.addEventListener('click',event=>{if(event.target.closest('a')){nav.classList.remove('open');button.setAttribute('aria-expanded','false')}});
+    document.querySelector('#year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
